@@ -11,21 +11,33 @@
     />
     <link rel="stylesheet" href="src/style.css" />
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
     <title>Meteo App</title>
   </head>
   <body>
+    <div class="content">
     <div class="weather-app">
       <header>
+        <div class="row">
+          <div class="col-9">
         <form class="search-form" id="search-form">
           <input
             type="search"
             placeholder="Enter a city..."
             required
             class="seach-form-input"
-            id="search-form-input"
-          />
-          <input type="submit" value="Search" class="search-form-button" />
-        </form>
+            id="search-form-input"/>
+        </div>
+          <div class="col-3">
+            <input type="submit" value="Search" class="search-form-button" />
+          </div>
+        </div>
+      </form>
       </header>
       <main>
         <div class="weather-app-data">
@@ -42,6 +54,86 @@
             <div id="icon"></div>
             <div class="weather-app-temperature" id="temperature"></div>
             <div class="weather-app-unit">°C</div>
+          </div>
+        </div>
+        <div class="weather-forecast">
+          <div class="row">
+            <div class="col-2">
+              <div class="weather-foreast-date">Thu</div>
+              <img
+                src="https://openweathermap.org/img/wn/02d@2x.png"
+                alt=""
+                width="42px"
+              />
+              <div class="weather-forecast-temperature">
+                <span class="weather-forecast-temperature-max"> 18° </span>
+                <span class="weather-forecast-temperature-min"> 12° </span>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="weather-foreast-date">Thu</div>
+              <img
+                src="https://openweathermap.org/img/wn/02d@2x.png"
+                alt=""
+                width="42px"
+              />
+              <div class="weather-forecast-temperature">
+                <span class="weather-forecast-temperature-max"> 18° </span>
+                <span class="weather-forecast-temperature-min"> 12° </span>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="weather-foreast-date">Thu</div>
+              <img
+                src="https://openweathermap.org/img/wn/02d@2x.png"
+                alt=""
+                width="42px"
+              />
+              <div class="weather-forecast-temperature">
+                <span class="weather-forecast-temperature-max"> 18° </span>
+                <span class="weather-forecast-temperature-min"> 12° </span>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="weather-foreast-date">Thu</div>
+              <img
+                src="https://openweathermap.org/img/wn/02d@2x.png"
+                alt=""
+                width="42px"
+              />
+              <div class="weather-forecast-temperature">
+                <span class="weather-forecast-temperature-max"> 18° </span>
+                <span class="weather-forecast-temperature-min"> 12° </span>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="weather-foreast-date">Thu</div>
+              <img
+                src="https://openweathermap.org/img/wn/02d@2x.png"
+                alt=""
+                width="42px"
+              />
+              <div class="weather-forecast-temperature">
+                <span class="weather-forecast-temperature-max"> 18° </span>
+                <span class="weather-forecast-temperature-min"> 12° </span>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="weather-foreast-date">Thu</div>
+              <img
+                src="https://openweathermap.org/img/wn/02d@2x.png"
+                alt=""
+                width="42px"
+              />
+              <div class="weather-forecast-temperature">
+                <span class="weather-forecast-temperature-max"> 18° </span>
+                <span class="weather-forecast-temperature-min"> 12° </span>
+              </div>
+            </div>
+
+
+
+
           </div>
         </div>
       </main>
@@ -61,5 +153,6 @@
       </footer>
     </div>
     <script src="src/index.js"></script>
+    </div>
   </body>
 </html>
