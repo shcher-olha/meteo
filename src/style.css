@@ -93,6 +93,10 @@ main {
   font-size: 16px;
   opacity: 0.5;
 }
+.weather-forecast-icon {
+  width: 100%;
+  text-align: center;
+}
 .weather-forecast-temperature-min {
 opacity: 0.5;
 }
